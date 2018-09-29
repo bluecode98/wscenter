@@ -21,7 +21,7 @@ use \Workerman\Autoloader;
 require_once __DIR__ . '/../../vendor/autoload.php';
 
 // WebServer
-$web = new WebServer("http://127.0.0.1:8080");
+$web = new WebServer("http://127.0.0.1:8000");
 // WebServer进程数量
 $web->count = 2;
 // 设置站点根目录

@@ -18,12 +18,12 @@ use \GatewayWorker\BusinessWorker;
 use \Workerman\Autoloader;
 use \Workerman\Lib\Timer;
 
-$gateway = new Gateway("wstcp://127.0.0.1:8081");
+$gateway = new Gateway("wstcp://127.0.0.1:8080");
 $gateway->name = 'WebsocketGateway';
 $gateway->count = 4;
 $gateway->lanIp = '127.0.0.1';
 $gateway->startPort = 2810;
-$gateway->registerAddress = '127.0.0.1:1238';
+$gateway->registerAddress = '127.0.0.1:12380';
 // $gateway->pingInterval = 55;
 // $gateway->pingNotResponseLimit = 4;
 
